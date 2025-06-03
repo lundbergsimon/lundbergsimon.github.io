@@ -1,17 +1,64 @@
 body {
+  font-family: monospace, "Courier New", Courier;
   background-color: rgb(10, 6, 23);
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   left: 0;
   top: 0;
   right: 0;
   bottom: 0;
+  color: rgb(20, 126, 197);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #name-header {
-  font-family: "Courier New", Courier, monospace;
   font-size: 4rem;
   color: rgb(20, 126, 197);
+  margin-bottom: 1rem;
+}
+
+#github-repositories {
+  min-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.github-repository-card {
+  background-color: rgb(26, 25, 46);
+  padding: 1rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid rgb(38, 36, 61);
+  transition: all 0.3s ease-out;
+}
+.github-repository-card:hover {
+  box-shadow: 0px 0px 10px 2px rgb(38, 36, 61);
+  scale: 1.05;
+}
+
+a {
+  color: rgb(20, 126, 197);
+  text-decoration: none;
+}
+
+.repo-name {
+  font-size: 1.2rem;
+}
+
+.repo-description {
+  opacity: 0.6;
 }
