@@ -1,6 +1,12 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(180deg, #0d234c 10%, #173364 90%);
+}
+
 body {
   font-family: monospace, "Courier New", Courier;
-  background-color: rgb(10, 6, 23);
   position: absolute;
   left: 0;
   top: 0;
@@ -15,17 +21,26 @@ body {
 }
 
 main {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 #name-header {
   font-size: 4rem;
   color: rgb(20, 126, 197);
-  margin-bottom: 1rem;
+}
+
+.image-container {
+  position: relative;
+  display: block;
+}
+.image-container img {
+  width: 30px;
+  height: 30px;
 }
 
 #github-repositories {
@@ -35,8 +50,38 @@ main {
   gap: 1rem;
 }
 
-.github-repository-card {
+.link-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.image-text-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.image-text-link img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+.image-text-link span {
+  flex-grow: 1;
+}
+
+.card {
   background-color: rgb(26, 25, 46);
+  padding: 1rem;
+  border-radius: 1rem;
+  border: 1px solid rgb(38, 36, 61);
+  transition: all 0.3s ease-out;
+  cursor: pointer;
+}
+.card:hover {
+  box-shadow: 0px 0px 10px 2px rgb(20, 126, 197);
+}
+
+.github-repository-card {
   padding: 1rem;
   border-radius: 1rem;
   display: flex;
@@ -44,10 +89,7 @@ main {
   gap: 1rem;
   border: 1px solid rgb(38, 36, 61);
   transition: all 0.3s ease-out;
-}
-.github-repository-card:hover {
-  box-shadow: 0px 0px 10px 2px rgb(38, 36, 61);
-  scale: 1.05;
+  cursor: pointer;
 }
 
 a {
@@ -60,5 +102,5 @@ a {
 }
 
 .repo-description {
-  opacity: 0.6;
+  opacity: 0.65;
 }
