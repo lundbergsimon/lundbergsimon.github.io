@@ -12,7 +12,7 @@ async function fetchRepositories() {
       repositoryCard.href = repo.html_url;
       repositoryCard.target = "_blank";
       repositoryCard.innerHTML = `
-          <div class="github-repository-card">
+          <div class="github-repository-card card">
             <div class="repo-name">${repo.name}</div>
             <div class="repo-description">${
               repo.description || "No description"
