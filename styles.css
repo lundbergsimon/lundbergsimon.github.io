@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(10, 6, 23);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+}
+
+#name-header {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 4rem;
+  color: rgb(20, 126, 197);
+}
