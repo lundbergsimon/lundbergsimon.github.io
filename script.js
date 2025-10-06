@@ -19,7 +19,7 @@ async function fetchRepositories() {
             }</div>
           </div>
       `;
-      const repositoryCardList = document.getElementById("github-repositories");
+      const repositoryCardList = document.getElementById("project-list");
       repositoryCardList.appendChild(repositoryCard);
     });
   } catch (error) {
