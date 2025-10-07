@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +8,12 @@
     <title>Simon Lundberg</title>
   </head>
   <body>
+    <div id="topbar">
+      <label class="switch">
+        <input id="theme-toggle" type="checkbox" title="Toggle dark mode">
+        <span class="slider round"></span>
+      </label>
+    </div>
     <main>
       <div id="name-header">Simon Lundberg</div>
       <div class="link-container">
@@ -37,4 +43,6 @@
       <div>Made by Simon Lundberg</div>
     </main>
   </body>
+
+  <script src="scripts/toggleTheme.js"></script>
 </html>
