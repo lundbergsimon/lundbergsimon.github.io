@@ -74,6 +74,10 @@ main {
   flex: 1;
 }
 
+.main-section {
+  width: 100%;
+}
+
 #topbar {
   background-color: var(--bg);
   position: absolute;

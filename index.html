@@ -1,48 +1,60 @@
 <!DOCTYPE html>
 <html class="" lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js"></script>
-    <title>Simon Lundberg</title>
-  </head>
-  <body>
-    <section id="topbar">
-      <label class="switch">
-        <input id="theme-toggle" type="checkbox" title="Toggle dark mode">
-        <span class="slider round"></span>
-      </label>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+  <title>Simon Lundberg</title>
+</head>
+
+<body>
+  <section id="topbar">
+    <label class="switch">
+      <input id="theme-toggle" type="checkbox" title="Toggle dark mode">
+      <span class="slider round"></span>
+    </label>
+  </section>
+  <main>
+    <div id="name-header">Simon Lundberg</div>
+    <div class="link-container">
+      <a href="https://www.linkedin.com/in/simon-lundberg-aa09aa16b/" target="_blank" rel="noopener noreferrer"
+        class="image-text-link card linkedin">
+        <img title="LinkedIn" src="./public/linkedin.png" />
+        <span>LinkedIn</span>
+      </a>
+      <a href="https://github.com/lundbergsimon" target="_blank" rel="noopener noreferrer" class="image-text-link card">
+        <img title="LinkedIn" src="./public/github.png" />
+        <span>GitHub</span>
+      </a>
+    </div>
+
+    <section class="main-section">
+      <h2>About Me</h2>
+      <p>
+        I'm a software-focused developer with a background in Computer Engineering and hands-on experience across
+        backend, frontend, databases, APIs, and cloud technologies. I enjoy building things, solving problems, and
+        learning new technologies, from Java and Spring Boot to React, TypeScript, Python, Docker, and more.
+      </p>
+      <p>
+        I'm curious, detail-oriented, and always looking to expand my technical skill set. I'm particularly interested
+        in software development and enjoy working on personal projects to explore new technologies and ideas. I'm open
+        to opportunities across the IT field and excited to keep learning and growing as a developer.
+      </p>
     </section>
-    <main>
-      <div id="name-header">Simon Lundberg</div>
-      <div class="link-container">
-        <a
-          href="https://www.linkedin.com/in/simon-lundberg-aa09aa16b/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="image-text-link card linkedin"
-        >
-          <img title="LinkedIn" src="./public/linkedin.png" />
-          <span>LinkedIn</span>
-        </a>
-        <a
-          href="https://github.com/lundbergsimon"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="image-text-link card"
-        >
-          <img title="LinkedIn" src="./public/github.png" />
-          <span>GitHub</span>
-        </a>
-      </div>
+
+    <section class="main-section">
+      <h2>Projects</h2>
       <div id="project-list-container">
-        <h2>Projects</h2>
         <div id="project-list"></div>
       </div>
-      <div>Made by Simon Lundberg</div>
-    </main>
-  </body>
+    </section>
 
-  <script src="scripts/toggleTheme.js"></script>
+    <div>Made by Simon Lundberg</div>
+  </main>
+</body>
+
+<script src="scripts/toggleTheme.js"></script>
+
 </html>
